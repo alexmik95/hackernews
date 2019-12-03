@@ -1,0 +1,12 @@
+stages:
+  - test
+
+rspec:
+  stage: test
+  image: "algonauti/ruby"
+  tags:
+    - tests
+  before_script:
+    - bundle install --jobs $(nproc)  "${FLAGS[@]}"
+  script:
+    - bundle exec rspec
