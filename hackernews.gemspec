@@ -42,5 +42,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activemodel'
   spec.add_dependency 'excon'
   spec.add_dependency "json", "~> 2.1.0"
-  spec.add_dependency "nokogiri", "~> 1.10.4"
+  spec.add_dependency "nokogiri", ">= 1.10.4", "< 1.14.0"
 end
